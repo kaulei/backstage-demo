@@ -1,27 +1,25 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: crossplane-kubernetes
-  title: Crossplane Kubernetes
-  description: Silly description of Crossplane Kubernetes
+  name: backstage-demo
+  title: backstage demo
+  description: backstage app demo
+  links:
+    - title: Website
+      url: http://backstage.io
+    - title: Documentation
+      url: https://backstage.io/docs
+    - title: Storybook
+      url: https://backstage.io/storybook
+    - title: Discord Chat
+      url: https://discord.com/invite/EBHEGzX
   annotations:
-    github.com/project-slug: vfarcic/backstage-demo
-    backstage.io/techdocs-ref: dir:. 
-    backstage.io/kubernetes-id: dot
-    backstage.io/kubernetes-namespace: a-team
-    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=crossplane-kubernetes
+    github.com/project-slug: backstage/backstage
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://backstage.io
   tags:
     - go
-  links:
-    - url: https://youtube.com/@devopstoolkit
-      title: DevOps Toolkit YouTube
-      icon: dashboard
-      type: Website
-    - url: https://devopstoolkit.live/
-      title: DevOps Toolkit Posts
-      icon: dashboard
-      type: Website
 spec:
   type: service
   lifecycle: production
-  owner: vfarcic
+  owner: kaulei
